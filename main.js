@@ -10,9 +10,9 @@ $(function() {
   }
 
   function update() {
-    $("#user img").attr("src", "https://www.phantauth.ga/icon/empty.png");
+    $("#user img").attr("src", "https://www.phantauth.net/icon/empty.png");
     $.ajax({
-      url: "https://phantauth.ga/user/",
+      url: "https://phantauth.net/user/",
       dataType: "json",
       success: function(user) {
         rivets.bind($("#user"), { user: user });
